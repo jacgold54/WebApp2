@@ -28,7 +28,7 @@ app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/HomePage.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/mystyle.css", (req, res) => {
@@ -36,7 +36,7 @@ app.get("/mystyle.css", (req, res) => {
 });
 
 app.get("/HomePage.html", (req, res) => {
-  res.sendFile(__dirname + "/HomePage.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/TestPage.html", (req, res) => {
